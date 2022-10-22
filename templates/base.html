@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="name">
+        <h2>BASED</h2>
+    </div>
+    <ul class="sidebar">
+        <a href="/">About</a><br>
+        <a href="/Laptops">Laptops</a><br>
+        <a href="/Tvs">Tvs</a><br>
+        <!-- <a href="/Electronics">Gadgets</a><br>
+        <a href="/cloths">Cloth</a> -->
+    </ul>
+
+    {% block main %}
+    {% endblock %}
+
+</body>
+</html>
